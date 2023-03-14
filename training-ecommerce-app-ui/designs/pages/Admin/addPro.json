@@ -1,0 +1,286 @@
+[
+    {
+        "id": "sd_K2gUlhQANYNMYxGH",
+        "type": "tab",
+        "createdDate": "2023-03-03T05:19:56.117Z",
+        "label": "addPro",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "addProComponent"
+    },
+    {
+        "id": "sd_UyvUCKniOiXD3IxM",
+        "type": "OnInit",
+        "z": "sd_K2gUlhQANYNMYxGH",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_UyvUCKniOiXD3IxM",
+        "category": "Lifecycle Events",
+        "x": 105,
+        "y": 80,
+        "wires": [
+            [
+                "sd_v1WaP1HOzOhJ3pK4"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "addProComponent"
+    },
+    {
+        "id": "sd_v1WaP1HOzOhJ3pK4",
+        "type": "PageVariables",
+        "z": "sd_K2gUlhQANYNMYxGH",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_v1WaP1HOzOhJ3pK4",
+        "category": "Function",
+        "x": 255,
+        "y": 80,
+        "wires": [
+            [
+                "sd_bv1UKrzMTFvr1YDb"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "addProComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_bv1UKrzMTFvr1YDb",
+        "type": "UseDependency",
+        "z": "sd_K2gUlhQANYNMYxGH",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "FormGroup",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "formGroup"
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "FormControl",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "formControl"
+                },
+                "injectable": false
+            },
+            {
+                "textIp": "Validators",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "validators"
+                },
+                "injectable": false
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/forms",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_bv1UKrzMTFvr1YDb",
+        "category": "Function",
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "sd_fGXb7wfdLLB7pG2O"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "addProComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_fGXb7wfdLLB7pG2O",
+        "type": "Script",
+        "z": "sd_K2gUlhQANYNMYxGH",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.addProductForm = new page.formGroup({\n    pname: new page.formControl('',[page.validators.required]),\n    pprice: new page.formControl('',[page.validators.required]),\n    img_url: new page.formControl('')\n})",
+        "functionName": "sd_fGXb7wfdLLB7pG2O",
+        "category": "Function",
+        "x": 580,
+        "y": 80,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "addProComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_1vTQ88qk2IKjLxVT",
+        "type": "PageStart",
+        "z": "sd_K2gUlhQANYNMYxGH",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "addProduct",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "addProduct",
+        "category": "General",
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "sd_oOCfeumhq5xp7Y3M"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "addProComponent"
+    },
+    {
+        "id": "sd_oOCfeumhq5xp7Y3M",
+        "type": "Script",
+        "z": "sd_K2gUlhQANYNMYxGH",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(page.addProductForm.value)\nbh.local.notValid = false;\nif(page.addProductForm.value.pname == '' || page.addProductForm.value.pprice == '') {\n    bh.local.notValid = true;\n}",
+        "functionName": "sd_oOCfeumhq5xp7Y3M",
+        "category": "Function",
+        "x": 265,
+        "y": 220,
+        "wires": [
+            [
+                "sd_f8tGQ7HRAq5Kslpy"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "addProComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_AjCgbQrhPh45GDUn",
+        "type": "PageCallService",
+        "z": "sd_K2gUlhQANYNMYxGH",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_tQmE9BQtk6lEppAQ",
+            "type": "tab",
+            "createdDate": "2023-03-02T12:06:33.398Z",
+            "label": "getProducts",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client"
+        },
+        "flow": {
+            "flowId": "sd_8NAnoePg9BDOc1wp",
+            "flowName": "insertProducts"
+        },
+        "inputVariables": [
+            {
+                "key": "product",
+                "map": true,
+                "valueType": "this.page",
+                "value": "addProductForm.value"
+            }
+        ],
+        "outputMapping": [],
+        "serviceImportPath": "app/sd-services/getProducts",
+        "startName": "insertProducts",
+        "inputParams": [
+            "this.page.addProductForm.value"
+        ],
+        "accept_bh": false,
+        "accept_csd": true,
+        "functionName": "sd_AjCgbQrhPh45GDUn",
+        "category": "General",
+        "x": 485,
+        "y": 220,
+        "wires": [
+            [
+                "sd_MkPCpzx3570wEqtX"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "addProComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_f8tGQ7HRAq5Kslpy",
+        "type": "PageSwitch",
+        "z": "sd_K2gUlhQANYNMYxGH",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "property": "notValid",
+        "propertyType": "bh.local",
+        "propertyGv": "bh.local.notValid",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 1,
+        "functionName": "sd_f8tGQ7HRAq5Kslpy",
+        "category": "Function",
+        "x": 385,
+        "y": 220,
+        "wires": [
+            [
+                "sd_AjCgbQrhPh45GDUn"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "addProComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_MkPCpzx3570wEqtX",
+        "type": "Script",
+        "z": "sd_K2gUlhQANYNMYxGH",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "location.reload();",
+        "functionName": "sd_MkPCpzx3570wEqtX",
+        "category": "Function",
+        "x": 585,
+        "y": 220,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "addProComponent",
+        "generated": true
+    }
+]

@@ -1,0 +1,139 @@
+[
+    {
+        "id": "sd_BtXcrYaPiC5L1FeR",
+        "type": "tab",
+        "createdDate": "2023-03-02T05:50:36.749Z",
+        "label": "products",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "productsComponent"
+    },
+    {
+        "id": "sd_JjNkwePzsjpiwd8b",
+        "type": "OnInit",
+        "z": "sd_BtXcrYaPiC5L1FeR",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_JjNkwePzsjpiwd8b",
+        "category": "Lifecycle Events",
+        "x": 105,
+        "y": 100,
+        "wires": [
+            [
+                "sd_ZzaNLyc0QmskEJG6"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "productsComponent"
+    },
+    {
+        "id": "sd_ZzaNLyc0QmskEJG6",
+        "type": "PageVariables",
+        "z": "sd_BtXcrYaPiC5L1FeR",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_ZzaNLyc0QmskEJG6",
+        "category": "Function",
+        "x": 225,
+        "y": 100,
+        "wires": [
+            [
+                "sd_77DwyaUYTeCSxadJ"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "productsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_77DwyaUYTeCSxadJ",
+        "type": "PageCallService",
+        "z": "sd_BtXcrYaPiC5L1FeR",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "isValidNode": true,
+        "noerr": 0,
+        "service": {
+            "id": "sd_tQmE9BQtk6lEppAQ",
+            "type": "tab",
+            "createdDate": "2023-03-02T12:06:33.398Z",
+            "label": "getProducts",
+            "disabled": false,
+            "info": "",
+            "functionSeq": 0,
+            "tabType": "client"
+        },
+        "flow": {
+            "flowId": "sd_F3zd11nDjESzedK1",
+            "flowName": "getProducts"
+        },
+        "inputVariables": [
+            {
+                "key": "products",
+                "map": true,
+                "valueType": "bh.input",
+                "value": ""
+            }
+        ],
+        "outputMapping": [
+            {
+                "mapVarType": "input",
+                "key": "products",
+                "valueType": "this.page",
+                "value": "products",
+                "mapVarName": "products",
+                "localVar": "this.page.products"
+            }
+        ],
+        "serviceImportPath": "app/sd-services/getProducts",
+        "startName": "getProducts",
+        "inputParams": [],
+        "accept_bh": false,
+        "accept_csd": true,
+        "functionName": "sd_77DwyaUYTeCSxadJ",
+        "category": "General",
+        "x": 345,
+        "y": 100,
+        "wires": [
+            [
+                "sd_t8A9RkTOgbk3IjHK"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "productsComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_t8A9RkTOgbk3IjHK",
+        "type": "Script",
+        "z": "sd_BtXcrYaPiC5L1FeR",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(page.products)",
+        "functionName": "sd_t8A9RkTOgbk3IjHK",
+        "category": "Function",
+        "x": 465,
+        "y": 100,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "productsComponent",
+        "generated": true
+    }
+]

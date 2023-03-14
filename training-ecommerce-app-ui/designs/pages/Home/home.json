@@ -1,0 +1,151 @@
+[
+    {
+        "id": "sd_eUBshqaGnmNJ8W7L",
+        "type": "tab",
+        "createdDate": "2023-03-01T10:19:57.479Z",
+        "label": "home",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "homeComponent"
+    },
+    {
+        "id": "sd_L6Hoxe0afTarJmCK",
+        "type": "OnInit",
+        "z": "sd_eUBshqaGnmNJ8W7L",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_L6Hoxe0afTarJmCK",
+        "category": "Lifecycle Events",
+        "x": 105,
+        "y": 60,
+        "wires": [
+            [
+                "sd_fHgd5IC2eDMlINCu"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homeComponent"
+    },
+    {
+        "id": "sd_fHgd5IC2eDMlINCu",
+        "type": "PageVariables",
+        "z": "sd_eUBshqaGnmNJ8W7L",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_fHgd5IC2eDMlINCu",
+        "category": "Function",
+        "x": 255,
+        "y": 60,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_48HJeYk9Wb7ybtFk",
+        "type": "PageStart",
+        "z": "sd_eUBshqaGnmNJ8W7L",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "navigatetoProd",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "navigatetoProd",
+        "category": "General",
+        "x": 105,
+        "y": 160,
+        "wires": [
+            [
+                "sd_ejcBms3BxEPVHrbG"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homeComponent"
+    },
+    {
+        "id": "sd_ejcBms3BxEPVHrbG",
+        "type": "Navigation",
+        "z": "sd_eUBshqaGnmNJ8W7L",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/home/products",
+        "functionName": "sd_ejcBms3BxEPVHrbG",
+        "category": "Navigation",
+        "x": 300,
+        "y": 160,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_UvRieYm8PuEQMZL5",
+        "type": "PageStart",
+        "z": "sd_eUBshqaGnmNJ8W7L",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "navigatetoHome",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "navigatetoHome",
+        "category": "General",
+        "x": 105,
+        "y": 260,
+        "wires": [
+            [
+                "sd_MlE2PgNWCaHbn5n3"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homeComponent"
+    },
+    {
+        "id": "sd_MlE2PgNWCaHbn5n3",
+        "type": "Navigation",
+        "z": "sd_eUBshqaGnmNJ8W7L",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/",
+        "pathMap": "",
+        "pathparams": "",
+        "pathparamsMap": "",
+        "qparams": "",
+        "qparamsMap": "",
+        "qparamsArray": "",
+        "resultMapping": "",
+        "functionName": "sd_MlE2PgNWCaHbn5n3",
+        "category": "Navigation",
+        "x": 285,
+        "y": 260,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homeComponent",
+        "generated": true
+    }
+]

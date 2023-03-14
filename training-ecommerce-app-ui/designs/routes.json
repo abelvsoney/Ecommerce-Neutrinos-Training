@@ -1,0 +1,34 @@
+{
+    "routes": [
+        {
+            "path": "home",
+            "component": "homeComponent",
+            "children": [
+                {
+                    "path": "products",
+                    "component": "productsComponent"
+                }
+            ]
+        },
+        {
+            "path": "admin",
+            "component": "adminHomeComponent",
+            "children": [
+                {
+                    "path": "addpro",
+                    "component": "addProComponent"
+                }
+            ]
+        },
+        {
+            "path": "''",
+            "redirectTo": "home",
+            "pathMatch": "full",
+            "default": true
+        },
+        {
+            "path": "**",
+            "component": "PageNotFoundComponent"
+        }
+    ]
+}

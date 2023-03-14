@@ -1,0 +1,147 @@
+[
+    {
+        "id": "sd_3DlWpRVhHOcLGreh",
+        "type": "tab",
+        "createdDate": "2023-03-03T05:21:27.472Z",
+        "label": "adminHome",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "adminHomeComponent"
+    },
+    {
+        "id": "sd_4OP7wRaatkpekV1E",
+        "type": "OnInit",
+        "z": "sd_3DlWpRVhHOcLGreh",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_4OP7wRaatkpekV1E",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_WDW70t8XhxChZbBc"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "adminHomeComponent"
+    },
+    {
+        "id": "sd_WDW70t8XhxChZbBc",
+        "type": "PageVariables",
+        "z": "sd_3DlWpRVhHOcLGreh",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_WDW70t8XhxChZbBc",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "adminHomeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_VTU4QLXjdSHapQUG",
+        "type": "PageStart",
+        "z": "sd_3DlWpRVhHOcLGreh",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "navigateToAddProduct",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "navigateToAddProduct",
+        "category": "General",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "sd_qD8LB6GiBxmTVOUs"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "adminHomeComponent"
+    },
+    {
+        "id": "sd_qD8LB6GiBxmTVOUs",
+        "type": "Navigation",
+        "z": "sd_3DlWpRVhHOcLGreh",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/admin/addpro",
+        "functionName": "sd_qD8LB6GiBxmTVOUs",
+        "category": "Navigation",
+        "x": 305,
+        "y": 240,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "adminHomeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_A8GClUlS7z9NK062",
+        "type": "PageStart",
+        "z": "sd_3DlWpRVhHOcLGreh",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "navigateToAdminHome",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "navigateToAdminHome",
+        "category": "General",
+        "x": 165,
+        "y": 360,
+        "wires": [
+            [
+                "sd_Kg0XzfuYk46tRQ2c"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "adminHomeComponent"
+    },
+    {
+        "id": "sd_Kg0XzfuYk46tRQ2c",
+        "type": "Navigation",
+        "z": "sd_3DlWpRVhHOcLGreh",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "pathMap": {
+            "type": "str",
+            "value": "admin"
+        },
+        "functionName": "sd_Kg0XzfuYk46tRQ2c",
+        "category": "Navigation",
+        "x": 310,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "adminHomeComponent",
+        "generated": true
+    }
+]

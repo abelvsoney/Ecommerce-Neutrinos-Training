@@ -1,0 +1,13 @@
+{
+    "displayName": "training-ecommerce-app-api",
+    "appName": "training-ecommerce-app-api",
+    "description": "training-ecommerce-app-api",
+    "lastModified": "2023-03-01T06:07:30.169Z",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "appType": "apiOnly",
+    "templateName": "blank",
+    "createDate": "2023-03-01T06:07:28.864Z",
+    "analyticsId": "93443928-6cd5-6845-5983-2c45adeb60c8",
+    "createdStudioVersion": "9.1.1"
+}
