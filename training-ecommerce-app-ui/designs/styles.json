@@ -1,1 +1,10 @@
-{"classes":[]}
+{
+    "classes": [
+        "first-row-image",
+        "first-row-text",
+        "blue-color",
+        "img-icon",
+        "add-pro-box",
+        "product-card"
+    ]
+}

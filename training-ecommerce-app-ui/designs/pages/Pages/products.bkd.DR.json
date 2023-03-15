@@ -12,7 +12,7 @@
             },
             {
                 "_key": "style",
-                "_value": "",
+                "_value": "padding:10px;",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -24,7 +24,7 @@
             },
             {
                 "_key": "fxFlex",
-                "_value": "",
+                "_value": "100",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -48,7 +48,7 @@
             },
             {
                 "_key": "pLayoutAlign",
-                "_value": "space-around",
+                "_value": "start",
                 "_type": "a",
                 "_attrDef": "p"
             },
@@ -80,7 +80,9 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": [
+                        "product-card"
+                    ],
                     "_type": "dav",
                     "_attrDef": "p"
                 },
@@ -98,6 +100,24 @@
                 },
                 {
                     "_key": "fxFlex",
+                    "_value": "30",
+                    "_type": "kv",
+                    "_attrDef": "c"
+                },
+                {
+                    "_key": "fxFlex.md",
+                    "_value": "45",
+                    "_type": "kv",
+                    "_attrDef": "c"
+                },
+                {
+                    "_key": "fxFlex.sm",
+                    "_value": "95",
+                    "_type": "kv",
+                    "_attrDef": "c"
+                },
+                {
+                    "_key": "fxFlex.gt-md",
                     "_value": "30",
                     "_type": "kv",
                     "_attrDef": "c"

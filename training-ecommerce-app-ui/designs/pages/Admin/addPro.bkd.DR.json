@@ -18,7 +18,7 @@
             },
             {
                 "_key": "class",
-                "_value": "",
+                "_value": [],
                 "_type": "dav",
                 "_attrDef": "p"
             },
@@ -42,13 +42,13 @@
             },
             {
                 "_key": "layoutAlign",
-                "_value": "start",
+                "_value": "center",
                 "_type": "a",
                 "_attrDef": "p"
             },
             {
                 "_key": "pLayoutAlign",
-                "_value": "stretch",
+                "_value": "space-between",
                 "_type": "a",
                 "_attrDef": "p"
             },
@@ -79,7 +79,9 @@
                 },
                 {
                     "_key": "class",
-                    "_value": "",
+                    "_value": [
+                        "add-pro-box"
+                    ],
                     "_type": "dav",
                     "_attrDef": "p"
                 },

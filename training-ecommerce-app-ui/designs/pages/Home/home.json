@@ -85,6 +85,13 @@
         "nodeType": "flow",
         "name": "",
         "path": "/home/products",
+        "pathMap": "",
+        "pathparams": "",
+        "pathparamsMap": "",
+        "qparams": "",
+        "qparamsMap": "",
+        "qparamsArray": "",
+        "resultMapping": "",
         "functionName": "sd_ejcBms3BxEPVHrbG",
         "category": "Navigation",
         "x": 300,
@@ -140,6 +147,145 @@
         "category": "Navigation",
         "x": 285,
         "y": 260,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_4PmrlYsTNYw6dBXF",
+        "type": "PageStart",
+        "z": "sd_eUBshqaGnmNJ8W7L",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "navigatetoLogin",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "navigatetoLogin",
+        "category": "General",
+        "x": 105,
+        "y": 360,
+        "wires": [
+            [
+                "sd_laOK4TK0OfX69DT3"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homeComponent"
+    },
+    {
+        "id": "sd_laOK4TK0OfX69DT3",
+        "type": "Script",
+        "z": "sd_eUBshqaGnmNJ8W7L",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.system.oauthService.login('/home/products')",
+        "functionName": "sd_laOK4TK0OfX69DT3",
+        "category": "Function",
+        "x": 265,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_x6Pwu0apPSgaN0uD",
+        "type": "PageStart",
+        "z": "sd_eUBshqaGnmNJ8W7L",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "navigatetoTest",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "navigatetoTest",
+        "category": "General",
+        "x": 124,
+        "y": 464.8046875,
+        "wires": [
+            [
+                "sd_3zoQoNflfPIgwCj0"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homeComponent"
+    },
+    {
+        "id": "sd_3zoQoNflfPIgwCj0",
+        "type": "Navigation",
+        "z": "sd_eUBshqaGnmNJ8W7L",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/home/test",
+        "pathMap": "",
+        "pathparams": "",
+        "pathparamsMap": "",
+        "qparams": "",
+        "qparamsMap": "",
+        "qparamsArray": "",
+        "resultMapping": "",
+        "functionName": "sd_3zoQoNflfPIgwCj0",
+        "category": "Navigation",
+        "x": 304,
+        "y": 464.8046875,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "homeComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_x2TLLS5pYqjMdpz4",
+        "type": "PageStart",
+        "z": "sd_eUBshqaGnmNJ8W7L",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "navigatetoLogout",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "navigatetoLogout",
+        "category": "General",
+        "x": 111,
+        "y": 546.8046875,
+        "wires": [
+            [
+                "sd_gJJ8ULYOCskGCYoY"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "homeComponent"
+    },
+    {
+        "id": "sd_gJJ8ULYOCskGCYoY",
+        "type": "Script",
+        "z": "sd_eUBshqaGnmNJ8W7L",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.system.oauthService.logout('/')",
+        "functionName": "sd_gJJ8ULYOCskGCYoY",
+        "category": "Function",
+        "x": 271,
+        "y": 546.8046875,
         "wires": [
             []
         ],

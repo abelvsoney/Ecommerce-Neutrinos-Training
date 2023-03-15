@@ -6,7 +6,15 @@
             "children": [
                 {
                     "path": "products",
-                    "component": "productsComponent"
+                    "component": "productsComponent",
+                    "canActivate": {
+                        "edited": true,
+                        "value": "NeutrinosAuthGuardService"
+                    }
+                },
+                {
+                    "path": "test",
+                    "component": "testComponent"
                 }
             ]
         },
